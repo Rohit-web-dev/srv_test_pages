@@ -1,12 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<title>Validation</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    
+	<div class="container">
+	<div class="main">
+		<h1>Form Validation</h1>
+
+		<form>
+		  <div class="form-group">
+		    <label for="sname" id="sname"></label>
+		    <input type="text" class="form-control" placeholder="Enter Name" id="name">
+		  </div>
+		  <div class="form-group">
+		    <label for="user" id="user"></label>
+		    <input type="text" class="form-control" placeholder="Enter Username" id="username">
+		  </div>
+		   <div class="form-group">
+		    <label for="mail" id="mail"></label>
+		    <input type="text" class="form-control" placeholder="Enter Email" id="email">
+		  </div>
+		  <div class="form-group">
+		    <label for="mobile" id="mobile"></label>
+		    <input type="text" class="form-control" placeholder="Enter Phone No." id="phone">
+		  </div>
+		   <div class="form-group">
+		    <label for="pass" id="pass"></label>
+		    <input type="text" class="form-control" placeholder="Enter Password" id="password">
+		  </div>
+		  <div class="form-group">
+		    <label for="cpass" id="cpss"></label>
+		    <input type="text" class="form-control" placeholder="Confirm Password" id="cpassword">
+		  </div>
+		 
+		  <button type="button"  onclick="return validation()" class="btn btn-primary">Submit</button>
+		</form>
+
+	</div>	
+</div>
+
+<script>
+function validation() {
+    var nm = document.getElementById('name').value;
+    var unm = document.getElementById('username').value;
+    var eml = document.getElementById('email').value;
+    var num = document.getElementById('phone').value;
+    var pas = document.getElementById('password').value;
+    var cps = document.getElementById('cpassword').value;
+
+    if (nm == "") {
+        document.getElementById('sname').innerHTML = "**Please fill this";
+        return false;
+    } 
+    if (!isNaN(nm)) {
+        document.getElementById('sname').innerHTML = "**Number are not allowed";
+        return false;
+    }
+    if ((nm.length < 3) || (nm.length > 20)) {
+        document.getElementById('sname').innerHTML = "**Enter min 3 & max 20 charactor";
+        return false;
+    }else {
+        document.getElementById('sname').innerHTML = "";
+    }
+
+    if (unm == "") {
+        document.getElementById('user').innerHTML = "**Please fill this";
+        return false;
+    }
+    if (!isNaN(unm)) {
+        document.getElementById('user').innerHTML = "**Number are not allowed";
+        return false;
+    }
+    if ((unm.length < 3) || (unm.length > 20)) {
+        document.getElementById('user').innerHTML = "**Enter min 3 & max 20 charactor";
+        return false;
+    }else {
+        document.getElementById('user').innerHTML = "";
+    }
+
+    if (eml == "") {
+        document.getElementById('mail').innerHTML = "**Please fill this";
+        return false;
+    }
+    var atposition = eml.indexOf("@");
+    var dotposition = eml.lastIndexOf(".");
+    if (atposition < 1 || dotposition < atposition + 2 || dotposition + 2 >= eml.length) {
+        document.getElementById('mail').innerHTML = "Please enter a valid e-mail address \n @ position:" + atposition + "\n . position:" + dotposition;
+        return false;
+    }else {
+        document.getElementById('mail').innerHTML = "";
+    }
+
+    if (num == "") {
+        document.getElementById('mobile').innerHTML = "**Please fill this";
+        return false;
+    }
+    if (isNaN(num)) {
+        document.getElementById('mobile').innerHTML = "**Please fill only number";
+        return false;
+    }
+    if ((num.length < 10) || (num.length > 10)) {
+        document.getElementById('mobile').innerHTML = "**Please fill 10 digit number";
+        return false;
+    }else {
+        document.getElementById('mobile').innerHTML = "";
+    }
+
+    if (pas == "") {
+        document.getElementById('pass').innerHTML = "**Please fill this";
+        return false;
+    }
+    if ((pas.length < 6) || (pas.length > 15)) {
+        document.getElementById('pass').innerHTML = "**Enter min 6 & max 15 charactor";
+        return false;
+    }else {
+        document.getElementById('pass').innerHTML = "";
+    }
+
+    if (cps == "") {
+        document.getElementById('cpss').innerHTML = "**Please fill this";
+        return false;
+    }
+    if (pas != cps) {
+        document.getElementById('cpss').innerHTML = "**Password are not maching";
+        return false;
+    }else {
+        document.getElementById('cpss').innerHTML = "";
+    }
+}
+</script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
