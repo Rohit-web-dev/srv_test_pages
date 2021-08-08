@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.heading{
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    text-shadow: 1.5px 1.5px gray;
+}
+.obj{
+    color: orange;
+    font-style: italic;
+}
+.arr{
+    color: green;
+    font-style: italic;
+}
