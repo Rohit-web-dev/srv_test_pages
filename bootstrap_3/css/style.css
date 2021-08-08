@@ -97,11 +97,252 @@
 	margin-bottom: 20px;
 }
 
-/* <div class="col-lg-4 col-md-4 col-12">
-                            <div class="box">
-                                <button type="button" class="btn btn-primary my-4">Gatsby</button>
-                                <h2>How To Create Top Navigation Menu</h2>
-                                <a href="#"><img src="img/man.webp" class="img-fluid img-thumbnail"></a>
-                                <a>Rohit Kumar</a>
-                            </div>
-                        </div> */
+/* ===============Learning================= */
+
+.learning-sec{
+	padding: 100px 0;
+	position: relative;
+}
+.b-img{
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+	background-size: 11rem;
+	border: 2px solid black;
+	border-radius: 20px;
+}
+.b-text{
+	padding: 50px;
+	margin-top: 40px;
+}
+.b-text h2{
+	font-size: 50px;
+	font-weight: bold;
+	color: var(--theme-ui-colors-alpha,#667eea);
+}
+.b-text p{
+	font-size: 25px;
+	color: var(--theme-ui-colors-omegaDark,#718096);
+}
+
+/* ============CSS DESIGN CART==================== */
+
+.sys-l{
+	background-color: #2965F1;
+	position: relative;
+	border-radius: 10px;
+}
+.sys-l i{
+	font-size: 50px;
+	color: #fff;
+	display:flex;
+    align-items:center;
+    justify-content:center;
+	margin-top: 30px;
+}
+.sys-l a{
+	display:flex;
+    align-items:center;
+    justify-content:center;
+	color: #fff;
+	font-weight: bold;
+}
+.card{
+	border-radius: 10px;
+}
+.card-body button{
+	border-radius: 10px;
+	letter-spacing: 2px;
+}
+.card-body a{
+	font-size: 22px;
+	font-weight: bold;
+}
+.card:hover{
+	transform: translateY(-7px);
+    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* ======================Gatsby Sec=================== */
+
+.gby-l{
+	background-color: #663399;
+	position: relative;
+	border-radius: 10px;
+}
+.gby-l i{
+	font-size: 50px;
+	color: #fff;
+	display:flex;
+    align-items:center;
+    justify-content:center;
+	margin-top: 30px;
+}
+.gby-l a{
+	display:flex;
+    align-items:center;
+    justify-content:center;
+	color: #fff;
+	font-weight: bold;
+}
+.gbyBtn{
+	background-color: #663399;
+	color: #fff;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+/* ====================JavaScript Sec=================== */
+
+.js-l{
+	background-color: #ecc94b;
+	position: relative;
+	border-radius: 10px;
+}
+.js-l i{
+	font-size: 50px;
+	color: #000;
+	display:flex;
+    align-items:center;
+    justify-content:center;
+	margin-top: 30px;
+}
+.js-l a{
+	display:flex;
+    align-items:center;
+    justify-content:center;
+	color: #000;
+	font-weight: bold;
+}
+.jsBtn{
+	background-color: #ecc94b;
+	color: #000;
+	letter-spacing: 2px;
+}
+
+/* ===============React sec =============== */
+
+.rct-l{
+	background-color: #4299e1;
+	position: relative;
+	border-radius: 10px;
+}
+.rct-l i{
+	font-size: 50px;
+	color: #fff;
+	display:flex;
+    align-items:center;
+    justify-content:center;
+	margin-top: 30px;
+}
+.rct-l a{
+	display:flex;
+    align-items:center;
+    justify-content:center;
+	color: #fff;
+	font-weight: bold;
+}
+.rctBtn{
+	background-color: #4299e1;
+	color: #fff;
+	letter-spacing: 2px;
+}
+
+/* =================Newsletter sec================= */
+
+.nl-sec{
+	width: 100%;
+	background-color: #fff;
+	padding: 50px;
+	box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.3);
+	border-radius: 20px;
+	text-align: center;
+}
+.nl-sec h3{
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-align: center;
+}
+.nl-sec input{
+	width: 30%;
+	margin: 0 auto;
+	background-color: rgba(187, 179, 179, 0.514);
+}
+.nl-sec button{
+	border-radius: 20px;
+	padding: 10px 20px;
+	letter-spacing: 2px;
+}
+
+/* ================Footer Sec=============== */
+
+footer{
+	width: 100%;
+	background-color: #fff;
+	margin-top: 80px;
+	box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.3);
+}
+.ft-sec{
+	padding: 60px;
+}
+.ft-p{
+	font-weight: bold;
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+.ft-sec ul li{
+	list-style: none;
+	margin: 10px;
+}
+.ft-sec ul li a{
+	color: gray;
+}
+.ft-sec ul li a:hover{
+	color: blue;
+	text-decoration: none;
+}
+.twt{
+	color: blue;
+}
+.ins{
+	color: rgba(235, 49, 49, 0.76);
+}
+
+/* ===================MEDIA QUERY================= */
+
+@media (max-width:768px){
+	.heading-right img{
+		width: 0;
+		height: 0;
+	}
+	.b-img2 img{
+		width: 0;
+		height: 0;
+	}
+	.heading-left h1{
+		font-size: 30px;
+	}
+	.b-text h2 {
+		font-size: 30px;
+	}
+	.sys-l i{
+		font-size: 30px;
+	}
+	.card-body button{
+		letter-spacing: 0.2px;
+	}
+	.card-body a{
+		font-size: 15px;
+	}
+	.nl-sec input{
+		width: 80%;
+	}
+	.nl-sec button{
+		padding: 5px 10px;
+		letter-spacing: 1px;
+	}
+	.searchBtn input{
+		width: 0;
+		height: 0;
+	}
+}
