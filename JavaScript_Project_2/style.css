@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+textarea{
+    margin: 20px 0;
+    font-size: 2rem;
+    text-align: center;
+    border: 2px solid rgb(94, 15, 15) !important;
+}
+.heading{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+.heading span{
+    color: rgba(20, 211, 211, 0.959)
+}
+.btn-primary{
+    display: flex;
+    margin: auto;
+    margin-bottom: 5px;;
+}
+.card-title{
+    padding-top: 10px;
+    padding-left: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.card{
+    border-radius: 20px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin: 0 auto;
+}
